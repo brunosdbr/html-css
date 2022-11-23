@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div{
+            display: inline-block;/*SERVE PARA COLOCAR TUDO NA MESMA LINHA*/
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;/*AULTURA*/
+            width: 200PX;/*LARGURA*/
+        }
+        /*ABAIXO TEREMOS AS PSEUDOCLASSES
+        # - É UM ID, . É UMA CLASSE E : É UMA PSEUDOCLASE*/
+        /*AS PSEUDOCLASSES TEM QUE ESTA RELACIONADA A UM ELEMENTO OU A UMA CLASSE*/
+        /*E É RELACIONADA AO ESTADO DO ELEMENTO*/
+         div:hover{/*'hover' SIGNIFICA: QUANDO EU PASSAR O MOUSE POR CIMA*/
+            background-color: yellow;
+         }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div><!--A PRINCÍPIO, PODE SE DIZER, QUE UMA 'div' É UM ESPAÇO E NO NAVEGADO ELA OCUPA UMA LINHA INTEIRA-->
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="A"><!--A TAG 'OL'- ORDEN LIST, SIGNIFICA ORDENAMENTO DA LISTA, SERVE PARA COLOCAR UMA LISTA DE ITENS NA ORDEM-->
+        <!--É POSSIVEL USAR O PARÂMETRO 'TYPE' PARA DEFINIR QUAL TIPO DE NUMERAÇÃO VAI ER A LISTA, COMO POR EXEMPLO, LETRAS MAIUSCULAS, MINUSCULAS OU NÚMEROS ROMANOS-->
+        <li>Acordar</li><!--A TAG 'LI'- LISTN ITEN, QUE SIGNIFICA ITEN DE LISTA, VAI ENUMERAR A LISTA-->
+        <li>Ligar para João</li><!--MESMO SE COLOCADO UM ITEM NO MEIO DE OUTRO ITEM SERA SEGUIDA A ORDEM-->
+        <li>Tomar Café </li><!--a PARTIR DO HTML5 O '/LI' SE TORNOU OPCIONAL, PODENDO SER COLOCADO SO 'LI'-->
+        <li>Escovar os Dentes</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="disc"><!--A TAG 'UL', UNORDEN LISTEN, SIGNIFICA LISTA NÃO ORDENADA, E SERVEM PARA CLASSIFICAR ITENS QUE NÃO PRECISEM DE ORDEM NUMEROICA OU ALFABÉTICA-->
+        <!--TAMBEM É POSSIVEL UTILIZAR O PARÂMETRO 'TYPE' PARA DEFINIR O CARACTERE QUE FICARA EM CADA ITEM DA LISTA, COMO POR EXEMPLO UM CIRCULO OU UM QUADRADO -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2><!--NESTE PRÓXIMO EXEMPLO É EXEMPLIFICADO COMO FAZEMOS UMA LISTA MISTA-->
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a">
+            <li>PHP</li>
+            <li>Phyton</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <ol>
+        <h2>Meus jogos favoritos</h2><!--EXEMPLO DE COMO COLOCAR LISTAS DESORDENADAS DENTRO DE LISTA ORDENADA-->
+        <ol>
+            <li>NES</li>
+            <ul type="square">
+                <li>Mario Bross</li>
+                <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+                </ul>
+            </ul>
+            <li>SNES</li>
+            <ul>
+                <li>Mario</li>
+                <li>Donkey kong</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul>
+                <li>Final Fantasy</li>
+                <li>Castlevania</li>
+            </ul>
+        </ol>
+    </ol>
+    <h2>Lista de Definição</h2>
+    <dl><!--ESSA TAG SIGNIFICA 'DEFINITIOS LISTA OU LISTA DE DEFINIÇÃO'-->
+        <dt><HTML>HTML</dt><!--ESSE SEÁ O TERMO-->
+        <dd>Linguagem de marcação para conteud de u msite</dd><!--ESSA SERÁA DESCRIÇÃO DO TERMO-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+        
+</body>
+</html>

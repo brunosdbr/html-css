@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu própio servidor.</p>
+    <!--TAMBEM É POSSIVEL USAR OS MESMOS PARA METROS DO AUDIO, VEJA A BAIXO-->
+    <video poster="imagens/CAM00256.jpg" width="300" controls><!--O PARAMETRO CONTROL SERVE PARA COLOCAR OS BOTÕES DE CONTROLE COMO PLAY, PAUSE VOLUME E ETC.
+        JA O 'width' É PARA DEFINIR A LARGURA DO VÍDEO E O 'poster' PARA INSERIR UMA CAPA(thunbnail) para o vídeo-->
+        <!--SEMPRE COLOCAR O width' POSTERIOR AO ARQUIVO QUE VOCÊ QUER MUDAR AS DIMENSÕES-->
+        <source src="midia/meu-video-mp4.mp4" type="video/mp4">
+        <source src="midia/Meu-Video-m4v.m4v" type="video/p4">
+        <source src="midia/meu-video-ogv.webm" type="video/webm">
+        <source src="midia/Meu-Video-webm.ogv" type="video/ogv">
+
+    </video>
+    
+</body>
+</html>

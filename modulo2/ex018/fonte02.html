@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /* A BAIXA VEREMOS COMO CRIAR UMA FONT-FAMILY*/
+        @font-face {/* ESSE FONTE FACE É UMA REGRA PARA FAZER A FONT-FAMILY*/
+            font-family:'Poppins-Regular' ;
+            src: url('Poppins-Regular.ttf') format('truetype');
+            font-weight: normal;
+
+            /*
+            TIPOS DE format()
+            - opentype(usado com .otf)
+            - truetype (usado com .ttf)
+            - embedded-opentype
+            - truetype-aat (Aplle advanced typography)
+            - svg
+            */
+        }
+        body{
+            font-family: 'Poppins-Regular';
+        }
+        h1{
+            font-family: 'Poppins-Regular';
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsam tenetur, doloremque dolorum ab voluptas consectetur sequi, quam voluptates iste illum cumque magni ad excepturi maxime neque. Eum, quasi libero.</p>
+
+    
+</body>
+</html>

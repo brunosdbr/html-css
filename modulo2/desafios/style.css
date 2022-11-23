@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(121, 240, 184);
+}
+header{
+    font-family: sans-serif;
+    background-image: linear-gradient(90deg, #126425 2%, #08792a 10%, #159e53);
+    color: white;
+    text-align: center;
+}
+main{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    height: 3100px;
+    width: 900px;px;
+    padding-block-end: 0%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+}
+#cabecalho{
+    text-align: center;
+    padding: 10px;
+    margin: 10px 200px 10px 200px;
+}
+nav{
+    text-align: left;
+    color: white;
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: start;
+}
+#nav:hover{
+    color: rgb(216, 101, 24);
+}
+a:hover{
+    
+}
+h1 > p{
+    text-align: center;
+}
+h2{
+    font-family: idroid;
+    font-size: 20pt;
+    color: rgb(25, 110, 25);
+    padding: 8px;
+}
+h3{
+    background-image: linear-gradient(90deg,#3eac5f3b 10%, #94f8c115);
+    font-family: idroid;
+    color: rgb(25, 110, 25);
+    padding: 8px;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    text-align: justify;
+    line-height: 30px;
+    text-decoration: dashed;
+    font-size: large;
+    padding: 25px;
+}
+#dm{
+    color: #126425;
+}
+picture{
+    padding-left: 50px;
+}
+#droid{
+    padding-left: 300px;
+}
+div{
+    background-color: rgb(12, 88, 12);
+    padding: 1px;
+}
+#video{
+    margin-left: 120px;
+    padding: 0px;
+}
+#rodape1{
+    background-color: #289b5c;
+    width: 850px;
+    height: 25px;
+    border-top: 0px;
+    border-right: 50px;
+    border-bottom: 0px;
+    border-left: 50px;
+}
+#rodape2{
+    background-color: #79eeae;
+    margin-top: 0px;
+    width: 850px;
+}
+footer{
+    background-color: rgb(16, 65, 16);
+    text-align: center;
+    width: auto;
+}
+li{
+    list-style: inside;
+}
+#colorsite{
+    color: #126425;
+}
+footer > p{
+    bottom: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

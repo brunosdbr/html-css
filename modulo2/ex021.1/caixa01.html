@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixa</title>
+    <!--
+        PODEMOS SIMPLIFICAR O EXERCICIO 21 DA SEGUINTE FORMA APRESENTADA ABAIXO
+    -->
+    <style>
+        h1{/*BOX-LEVEL*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-color: 10px solid darkslategray;
+
+            padding: 10px;/*SE CASO TODAS AS MEDIDAS FOREM IGUAIS SO BASTA COLOCAR O VALOR UMA UNICA VEZ*/
+
+            margin: 20px 20px 40px 20px;/*OBS: SE CASO QUISER CENTRALIZAR A CAIXA É SOMENTE COLOCAR AO INVES DE PIXEL O VALOR DE 'auto' NA ESQUERDA E NA DIREITA */
+            outline: 5px dashed salmon;
+        }
+        a{/*BOX-LINE*/
+           border: 10px solid red;
+           padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Box-Level</h1><!--O 'h1' É UMA CAIXA DO TIPO 'BOX-LEVEL'-->
+    <p>Parágrafos tambem são exemplos de box-level, mas os <a href="#">links são
+    exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

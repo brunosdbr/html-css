@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta ndevice-widthame="viewport" content="width=, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* pesseudoclasse usa-se: uma vez dois pontos ':'
+           pseudoelemento usa-se: duas vezes dois pontos'::'*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* as configurações abaixo servem para mudar a cor do link*/
+        a{
+            color: red;
+            text-decoration: none;/* O PARÂMETRO 'text-decoration:' É PARA DEFINIR O SUBLINHADO DO LINK E AO CRESCENTA 'none' RETIRASSE ESSE SUBLINHADO*/
+            font-weight: bold;/*SERVE PARA DEICXAR O TEXTO DO LINK EM NEGRITO*/
+        }
+        /* as configurações abaixo servem para mostra quando link é visitado ou não visitado, e para isso a cor do visitado é uma e a do não visitado é outra*/
+        a:visited{/*A PSEUDOCLASSE 'visited' SERA USADA PARA MARCAR UM LINK COM OUTRA COR, DEMOSTRANDO QUE ELE JA FOI VISITADO*/
+            color: darkred;/*SERVE PARA MUDAR A COR DO LINK APÓS VISITÁLO*/
+        }
+        /*as configurações abaixo servem para mostrar a ação do mouse ao passar em cima do link*/
+        a:hover{
+            color: black; /*SERVE PARA DEIXAR O LINK PRETO AO PASSAR O MOUSE*/
+            text-decoration: underline;/*SERVE PARA DEIXAR O LINK SUBLINHADO AO PASSAR O MOUSE POR CIMA*/
+        }
+        /*as configurações abaixo servem para mostrar a ação ao clicar no link*/
+        a:active{
+            color: yellow;/*SERVE PARA MUDAR A COR DO TEXTO DO LINK AO CLICA-LO(é possível ver o efeito ao clicar e segura o clique0*/
+        }
+        /*as configurações as baixo mostram como colocar um texto após o link, se precisar alterar o texto ja escrito do link*/
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

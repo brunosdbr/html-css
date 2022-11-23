@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture><!--A TAG 'PICTURE' PERMITE COLOCAR IMAGENS DE VÁRIAS FONTES DIFERENTES OU DE 'VÁRIOS SOURCES'(src)-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"><!--A TAG 'source:media:type' É UMA TAG QUE PERMITE ALTERAR O TAMANHO DA IMAGEM
+        CONFORME O TAMANHO DO NAVEGADOR,ONDE:
+        media= REPRESENTA O TAMANHO DA IMAGEM, srcset= O LOCAL ONDE A IMAGEM ESTÁ E type= O TIPO DE ARQIVO DA IMAGEM-->
+        <!--OBS: SEMPRE COLOCAR A TAG 'PICTURE' UMA A CIMA DA OUTRA EM SEQUÊNCIA DE TAMANHO E ALTERAR A: min-width PARA max-width, PARA QUE SEJA APROVEITADO O MAXIMO DO TAMANHO DA IMAGEM
+        E ACRESCENTAR O TAMANHO EM PIXEL DA MAIOR IMAGEM, NESSE CASO FOI MIL PIXEL POREM FOI NECESSÁRIO COLOCAR MAIS 50PX PARA DAR UMA FOLGA NO ENQUADRAMENDO DA PÁGINA NO SITE-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/[Look To You] - 09 - Only One.mp3" controls autoplay></audio><!--A TAG 'AUDIO' SERVE PARA INSERIR UM AUDIO AO ARQUIVO HTML,
+                                                                                        ALÉM DA TAG AUDIO, É NECESSÁRIO ACRESCENTAR OS PARAMETROS 'AOTOPLAY(para a musica poder todar) E O 
+                                                                                        CONTROLS PARA QUE O BOTÃO DE MIDIA DE AUDIO APARECA NO NAVEGADOR'-->
+    <!--É POSSIVEL TA,BE,M QUE O NAVEGADOR NÃO RODE O AUDIO, ENTÃO É NECESSARIO COLOCAR VARIOS PARAMETROS SOURCE DENTRO DA TAG AUDIO
+    CONFORME VISTO A BAIXO-->
+    <audio preload="metadata" autoplay controls loop><!--DENTRO DA TAG AUDIO TAMBÉM É POSSIVEL COLOCAR O PARAMETRO 'preload' SEGUIDO DE autoplay, controls E loop-->
+        <source src="midia/[Look To You] - 09 - Only One.mp3" type="audio/mpeg">
+        <source src="midia/[Look To You] - 13 - Only One.ogg" type="audio/ogg">
+        <source src="midia/[Look To You] - 09 - Only One.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/[Look To You] - 09 - Only One.mp3">Clique aqui</a> para baixar o  arquivo MP3</p>
+    </audio>
+    
+</body>
+</html>

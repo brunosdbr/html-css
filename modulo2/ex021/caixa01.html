@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixa</title>
+    <!--
+        TODO ELEMENTO VISÍVEL EM UM SITE ESTA DENTRO DE UMA CAIXA
+        SÃO EXEMPLOS DE CAIXA: <h1></h1>, <div></div>, <p></p> e ETC
+        AS MEDIDAS DA CAIXA SÃO:
+        HEIGTH: ALTURA
+        WIDTH: LARGURA
+    -->
+    <!--
+       BORDER - É POSSIVEL TRACAR UMA LINHA AO REDOR DA CAIXA, E ESSA LINHA É CHAMADA DE 'BORDER'
+       PADDING - SE CASO QUISER COLOCAR UM ESPAÇO ENTRE A BORDA E O CONTEÚDO DA CAIXA USA-SE O 
+                PADDING, O PADDING TEM AS QUATRO DIMISSÕES, DE CIMA, DE BAIXO DA ESQUERDA E DA DIRETA
+       MARGIN - TAMBEM TEMOS A 'MARGIN', QUE SERVE PARA COLOCAR UM ESPAÇO ENTRE UMA CAIXA E OUTRA
+       OUTLINE - É O CONTORNO OU TRAÇADO QUE FICARA AO REDOR DA BORDER, FICANDO FORA DO ELEMENTO
+    -->
+    <!--
+        EXISTEM DOIS TIPOS DE CAIXA:
+        BOX-LEVEL: AS PRINCIPAIS CARACTERISTICAS SÃO QUE ELES SEMPRE COMECARAM EM UM
+                    PARÁGRAFO NOVO E ELE SEMPRE OCUPARA A LARGURA TOTAL DE UMA TELA(viewport), COMO POR EXEMPLO UM <p></p> OU UM <h1></h1>
+                    ELES TODA AS VEZES QUE SÃO CRIADOS COMEÇÃO EM UMA NOVA CAIXA
+        INLINE-LEVEL: A PRINCIPAL CARACTERISTICA DESSA CAIXA É QUE ELA VAI FICARE SEMPRE NA MESMA LINHA QUE FOR CRIADA
+                      COMO É O EXEMPLO DA TAG <a></a> OU DA TAG <div></div>
+    EXEMPLOS DE BOX-LEVEL:        EXEmPLOS DE INLINE-LEVEL
+    <h1> a <h6>                   <span>
+    <div>                         <a>
+    <p>'                          <code>
+    <main>                        <small>
+    <header>                      <strong>
+    <nav>                         <em>
+    <article>                     <label>
+    <aside>                       <button>
+    -->
+    <!--TODA VEZ QUE QUISER CONVERRTER PARA BOX-LEVEL É SO COLOCAR display: block; E SE QUISER CONVERTER PARA BOX-INLINE É SO COLOCAR display: inline;-->
+    <style>
+        h1{
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;/*LARGURA DA BORDA*/
+            border-style: solid;/* ESTILO DA BORDA*/
+            border-color: darkgrey;/*COR DA BORDA*/
+
+            /*NO PADDING TEM QUE COLOCAR AS MEDIAS NA SEGUNE ORDEM: EM CIMA, DIRETA, A BAIXO E ESQUERDA*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* O 'margin: auto;' SERVE PARA COLOCAR A CAIXA NO MEIO DA TELA*/
+            margin-top: 20px;
+            margin-right: 20;
+            margin-bottom: 40;
+            margin-left: 20;
+
+            outline: dashed 5px salmon
+        
+            
+
+        }
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Box-Level</h1><!--O 'h1' É UMA CAIXA DO TIPO 'BOX-LEVEL'-->
+    <p>Parágrafos tambem são exemplos de box-level, mas os <a href="#">links são
+    exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

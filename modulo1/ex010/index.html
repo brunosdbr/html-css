@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/">repositório público no GitHub</a></p><!--É USADA A TAG 'A' PARA CRIAR UM HIPERLINK DA PARTE SO TEXTO QUE VOCÊ QUEWR-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/">canal gratuito no YouTube</a></p>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p><!--É USADO 'target="_blank" rel="external' PARAR ABRIR OUTRA JANELA AO INVÉS DE SOBREPOR SOBRE O MEU SITE, 
+    É É A MESMA COISA QUE DIZER QUE O ALVO(target) DO MUE HIPERLINK É REFERENTE(rel) A UM LINK EXTERNO-->
+    <h2>Usando links internos</h2>
+    <p>Está é a primeira página do site. Se você quiser, pode
+    acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p><!--QUANDO É FEITO UM LINK INTERNO NÃO É PRECISO DIGITAR A URL INTEIRA-->
+    <!--E A TARGET '_SELF' SERVE PARA ABRIR LINKS DENTRO DA PRÓPIA PÁGINA-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p><!--SE O LINK ESTIVER DENTRO DE UMA PÁGINA VOCÊ TEM QUE INFORMAR O CAMINHO-->
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livros/03 - Como funciona HTML e CSS.pdf" download="livros/03 - Como funciona HTML e CSS.pdf" type="aplication/pdf">Baixar o livro em pdf</a></li><!--É USADO OS PARA METROS 'DOWNLOAD E TYPE PARA BAIXAR O ARQUIVO PDF AO INVÉS DE ABRI-LO NO NAVEGADOR'-->
+        <li><a href="livros/03 - Como funciona HTML e CSS.rar">Livro compactado em RAR</a></li>
+    </ul>
+    <!--ACESSAR O SITE IANA.ORG PARA SABER TODAS AS 'MEDIAS TYPES'-->
+    
+</body>
+</html>
