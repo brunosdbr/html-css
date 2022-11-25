@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamanho da imagem de fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;/*SERVE PARA BODY COBRIR 100% DA VIEWPORT*/
@@ -13,6 +13,10 @@
             background-position: center center;/*serve para colocar a imagem no centro da tela*/
             background-repeat: no-repeat;
             background-size: cover;/*O cover SERVE PARA QUE A IMAGEM VA SE ADAPTANDO AO SITE NA MEDIDA QUE A PAGINA VA AUMENTANDO SEM DEIXAR ESPAÇO NEM A BAIXO NEM NAS LATERAIS*/
+            background-attachment: fixed;/* O attachment SERVE PARA FICAR OU DEIXAR O FUNDO ROLANTE, PARADEIXAR ROLANTE USA-SE O 'scrool' E PARA DEIXAR FISO O FIXED*/
+
+            /* É POSSÍVEM TAMBEM RESUMIR TODOS OS BACGROUNDS ATRVÉSDE UMA ' SHORTHAND' A ' BACKGROUND
+            E TEM QUE SER NAS SEGUINTE ORDEM -> color > image > position > repeat > size > atachment, PORÉM O 'size' MUITAS VEZES NÃO FUNCIONA E TEM QUE COLOCA-LO A PARTE*/
         }
         main{
            background-color: white;
