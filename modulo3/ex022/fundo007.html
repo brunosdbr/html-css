@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento vertical de imagem</title>
+
+    <!--PARA ALINHA VERTICALMENTE É PRECISO TER UM CONTAINER E UM CONTEÚDO-->
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+            position: relative;
+            height: 90vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;/*SO É POSSIVEL USAR A TAG 'LEFT' OU 'TOP' COLOCANDO A CAIXA NA POSIÇÃO ABSOLUTE*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);/*A TAG 'transform' SERVE PARA MUDAR ALGUM PARÂMETRO, NESSE CASO O PARÂMETRO USADO FOI O 'translate'(TRANSLAÇÃO), QUE SERVE PARA PODER MANIPULAR A POSIÇÃO DA CAIXA PARA QUARQUER DIREÇÃO*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container"><!--O 'CONTAINER' É UMA CAIXA PARA ARMEZANER UM CONTEÚDO, NESSE CASO A CAIXA FOI A TAG 'section'-->
+        <article id="conteudo"><!--O CONTEÚSO É UMA CAIXA PRA QEU VAI DENTRO DO CONTAINER, NESSE CASO FOI A TAG 'article'-->
+
+        </article>
+    </section>
+    
+</body>
+</html>
