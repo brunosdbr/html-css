@@ -17,7 +17,6 @@
 header{
     background-color: black;
     margin: auto;
-
 }
 h1{
     font-family: Passion One;
@@ -36,10 +35,10 @@ h2{
 }
 #conteudo1{
     background-color: rgba(0, 0, 0, 0.171);
-    font-family: Sriracha;
+    font-family: var(--fonte3);
     color: white;
     height: 600px;
-    width: 200px;
+    width: 400px;
 }
 #container2{
     background-image: url(imagens/background002.jpg);
@@ -48,6 +47,11 @@ h2{
     background-color: rgba(0, 0, 0, 0.171);
     height: 600px;
     width: 200px;
+}
+.fonte{
+    font-family: var(--fonte3);
+    font-size: 2em;
+    line-height: 200%;
 }
 footer>p{
     background-color: black;
