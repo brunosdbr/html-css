@@ -16,14 +16,13 @@
 }
 header{
     background-color: black;
-    margin-top: ;
     padding-top: 30px;
     padding-bottom: 30px;
     margin: auto;
 }
 h1{
     font-family: Passion One;
-    font-size: 40pt;
+    font-size: 100pt;
     color: white;
     text-align: center;
 }
@@ -33,36 +32,42 @@ h2{
     color: white;
     text-align: center;
 }
-#container{
-    background-color: white;
-    padding-left: 10px;
+a{
+    color: white;
+    text-decoration: none;
 }
-#container1{
-    background-image: url(imagens/background001.jpg);
+a:hover{
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+#conteudo{
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
 }
 #conteudo1{
-    background-color: rgba(0, 0, 0, 0.171);
+    background-image: url(imagens/background001.jpg);
+    background-color: rgba(0, 0, 0, 0.233);
     font-family: var(--fonte3);
     color: white;
     padding-left: 5px;
-    height: 600px;
-    width: 400px;
-}
-#container2{
-    background-image: url(imagens/background002.jpg);
 }
 #conteudo2{
-    background-color: rgba(0, 0, 0, 0.171);
-    padding-left: 10px;
-    height: 600px;
-    width: 200px;
+    background-image: url(imagens/background002.jpg);
+    background-color: rgba(0, 0, 0, 0.233);
+    font-family: var(--fonte3);
+    color: white;
+    padding-left: 5px;
 }
 .fonte{
     font-family: var(--fonte3);
     font-size: 2em;
     line-height: 200%;
+    padding-left: 15px;
 }
 footer>p{
+    font-family: var(--fonte1);
     background-color: black;
     padding-top: 10px;
     padding-bottom: 10px;
