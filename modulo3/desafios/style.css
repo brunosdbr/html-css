@@ -20,6 +20,10 @@ header{
     padding-bottom: 30px;
     margin: auto;
 }
+header > h1{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
 h1{
     font-family: Passion One;
     font-size: 80pt;
