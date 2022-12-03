@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{/*COLOCASSE DESSE JEITO DUAS TAGS JUNTO QUANDO SE QUER COLOCAR A MESMA CONFIGURAÇÃO PARA AS DUAS*/
+    min-height: 100vh;
+    background-color: darkgray;
+    
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase;A TAG TEXT-TRANSFORM SERVE PARA TRANSFORMA TODA UMA ESTRUTURA TEXTUAL E UPPERCASE SERVA PARA TRANSFOMA TUDO EM MAIUSCULO*/
+    font-variant: small-caps;/*A TAG FONT-VARIANT SERVE PARA MUDARA VARIAÇÃO DA FONTE E A SMALL-CAPS É PARA COLOCAR A PRIMEIRA LETRA DE CADA DE CADA PALAVRA MAIOR*/
+
+}
+header > P{
+    padding-bottom: 50px;
+}
+footer a, header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{/*ESSAS CONFIGURAÇÕES SÃO PRA COLOCAR UM ESPAÇO ABAIXO E ACIMA DE CADA ESTROFE*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;/*COLOCAR UM ESPAÇO DE DUAS VEZES ENTRE AS LINHAS*/
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+section.imagem > p{
+    width: 400px;
+    background-color: black;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
