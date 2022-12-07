@@ -11,27 +11,21 @@ body{
     background-attachment: fixed;
 }
 #conteudo{
+    height: 600px;
     display: flex;
     position: absolute;
-    top: 0%;
+    top: 1%;
     left: 35%;
 }
-.display{
-    display: flex;
-    width: 272px;
-    height: 472px;
-    background-color: aqua;
-    position: absolute;
-    top: 13%;
-    left: 36.5%;
-
-}
 iframe{
-    width: 90vw;
-    height: 500px;
+    width: 260px;
+    height: 450px;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    position: absolute;
+    top: 13%;
+    left: 36.5%;
 }
 .logo{
     padding: 10px;
@@ -40,13 +34,6 @@ iframe{
     height: 50px;
     margin-left: 1250px;
 }
-.phone{
-    margin: auto;
-
-}
 .logo2{
    border-radius: 50%;
-}
-a:hover{
-    transition: all;
 }
