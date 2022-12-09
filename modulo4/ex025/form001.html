@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornulário</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+</head>
+<!--TODO FORMULARIO TEM QUE ESTA ENTRE AS TAG '<form><form/>'-->
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off"><!--O METODO GET, BASICAMENTE MANDA AS INFORMAÇÕES DO FORMULÁRIO VIA URL E O METODO POST NÃO, EM RESUMO USA-SE O METODO GET QUANDO OS DADOS NÃO FOREM SENSÍVES NEM CONFIDENCIAIS E O POST PARA INFORMAÇÕES MAIS SENSÍVEIS, PORÉM MESMO ASSIM AS DUAS FORMAS NÃO SÃO SEGURAS, PARA UMA MAIOR SEGURANÇA É PRECISSO USAR CRIPTOGRAFIA(assunto da materia de protocolos de rede https)-->
+    <!--OBS COM O METODO GET SO É POSSIVEL ENVIAR ATÉ 3MIL BYTES DE INFORMAÇÃO, POR ISSO É RECOMENDAVEL PARA ENVIO DE INFORMAÇÕES DO TIPO TEXTO E POST COMO SUPORTA MAIS BYTES DE INFORMAÇÃO É INDICADO PAR O ENVI DE VIDEOS FOTOS E ARQUIVOS MAIS PESADOS-->
+        <!--A TAG 'action' SERVE PARA EXECUTAR UMA AÇÃO, NESSE CASO A AÇÃO FOI PARA USAR O ARQUIVO .php-->
+        <!--O AUTOCOMPLETE SERVE PRA LIGAR OU DESLIGAR A OPÇÃO DE AUTO COMPLETAR-->
+        <!--UMA COISA MUITO INPORTANTE É FAZER A LIGAÇÃO DO BOTÃO 'SUBMIT' AOs IMPUTS DE SAIDA COMO AS 'type:"text" E PARA ISSO É USADO
+        O 'label'(ETIQUETA) É ELE QUEM VAI DIZER, POR EXEMPLO' QUE O INPUT COM name:nome ESTA LIGADO A PALAVRA NOME, QUE É NOME AO LAOD DO INPUT-->
+        <!--OBS: NO INPUT EXISTE O name E O id, BASICAMENTE O name É USADO PELO PHP E HTML E O id PELO JAVASCRIPT, NÃO É OBRIGATORIO MAIS O MAIS RECOMENDADO-->
+        <!--EXISTEM DOIS METODOS PARA ENVIO DAS INFORMAÇÕES DE UM FORMULÁRIO O METODO 'GET' E O 'POST' POR PADRÃO, MESMO QUE NÃO ESTEJA NA TAG FORM, POR PADRÃO É O METODO GET-->
+        <p><label for="inome">Nome:</label><!--NO LABEL O 'for' É COMO SE ESTIVESSE DIZENDO: 'PARA QUEM' OU, 'VOU COLOCAR O LABEL PARA QUEM'-->
+            <input type="text" name="nome" id="inome"></p><!--PARA NOSSO LABEL FOI USADO O 'id'-->
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    
+</body>
+</html>

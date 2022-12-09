@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<!--A BAIXO VAMOS VER COMO FAZER INPUITS MAIS SEGUROS DE USUÁRIO E SENHA-->
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário"><!--O ATRIBUTO 'required' SERVE PARA FAZER COM QUE AS INFPORMAÇÕES DO INPUT SEJAM OBRIGATÓRIAS DE PREENCHIMENTOANTES DE ENVIAR-->
+            <!--O ATRIBUTO 'minlength' QUER DIZER O TAMANHO MININO DE CARACTERES, SE EU CRIAR UM USUÁRIO COM MENOS DE 5 CARACTERES NÃO SERA ACEITO, E O maxlength É O MAXIMO DE CARACTERES-->
+            <!--O ATRIBUTO 'size' É O TAMANHO DE CARACTERES QUE APARECERÃO NA CAIXA, OU SEJA, SE DIGITAR 15 CARACTERES SO MOSTRA 10 CARACTERES, APESAR DE CONTER OS 15-->
+            <!--O ATRIBUTO 'placeholder' BASICAMENTE É UM 'LOCAL PARA COLOCAR COISAS' OU SEJA, ELE APARECERÁ DENTRPO DA CIXA INDICANDO OQIUE DEVE SER COLOCADO NELA, E ASSIM QUE VÕCÊ COMEÇAR A ESCREVER ELE DESAPARECERÁ, EM OUTRAS PALAVRA, É UMA DICA DO QUE O USUÁRIO IRA COLOCAR-->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" size="8">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
