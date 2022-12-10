@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Select, Datalist e Textarea</title>
+</head>
+<body>
+    <h1>Trabalhando com Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <!--É POSSIVEL USAR TAMBEM A TAG 'select' PARA CRIAR UM BOTÃO DE SELEÇÃO EM FOM DE LISTA SUSPENSA-->
+    <!--E PARA CRIA CADA ITEM DESTA LISTA, DENTRO DA TEG 'SELECT' É POSSÍVEL USAT A TAG OPTION COM O PARAMETRO 'VALUE' PAR ASSIM DAR O NOME DE CADA ELEMENTO DETA LISTA SUSPENSA-->
+    <p>
+        <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <!--É POSSIVEL TAMBEM AGRUPAR OS ELEMENTOS DE SELECT POR GRUPO USANDO A TAG 'optgroup' SEGUIDA DO ATRIBUTO 'label', (não confundir label atributo com label tag)-->
+                <!--E PAR DEIXAR UM ELEMENTO JA SELECIONADO É SO COLOCAR O ATRIBUTO 'select' dentro de um tag option-->
+                <!--OU VOCÊ PODE CRIAR UM OPTION COM UM NOME ESCOLHIDO PAR FICAR COMO OPÇÃO A MOSTRAR NA TAG SELECT-->
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+            <p>
+                <!--É POSSÍVEL COLOCAR UMA TAG CHAMADA 'datalist' ESSA TAG TRABALHA MELHO JUNTO COM UM INPUT DO TIPO TEXT, AO JUNTAR O INPUT DO TIPO TEXT COM A DATALIS É POSSIVEL FAZER UMA LISTA DENTRO DESTE INPUT-->
+                <!--PARA QUE ESSE DATALISTA APARECE DENTRO DO INPUT TEXT É PRECISO COLOCAR DENTRO DA TAG DATALIST UM ID E DAR UM NOME A ELE E DEPOIS VINCULAR AO ATRIbUTO 'list' DENTRO DA TAG 'INPUT'-->
+                <label for="iprof">Profissões</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Desenvolvedor</option>
+                    <option>Contador</option>
+                    <option>Professor</option>
+                </datalist>
+            </p>
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+            <!--BASIAMENTE A TAG 'textarea' CRIA UMA AREA COM UMA CIXA DE TEXTO PAR SER ESCRITO O QUE QUISER SEM LIMITE DE CARACTERES-->
+            <!--POR PADRÃO ELA VEM COM 30 LINHAE 10 COLUNAS-->
+    </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+</body>
+</html>
