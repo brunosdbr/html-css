@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de foormulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name" req>
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required><!--OS ATRIBUTOS 'min' E 'max' SERVEM, PARA CAIXAS NUMERICAS E QUER DIZER O MINIMO DE CARACTERES DESSA CAIXA-->
+            <!--O ATRIBUTO 'step'(PASSO) QUER DIZER DE QUANDO EM QUANDO UM NUMERO VAI MUDANDO, NESSE CASO DE EM MEIO EM MEIO-->
+        </p>
+        <p>
+            <label for="imes">Periodo letivo</label>
+            <input type="month" name="mes" id="imes"><!--O type=month SERVE PARA COLOCAR UMA CAIXA COM MES E ANO-->
+        </p>
+        <P>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="09-12-2022">
+        </P>
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
