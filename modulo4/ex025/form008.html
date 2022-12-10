@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Output e um pouco de JAVASCRIPT</title>
+    
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+        <p>
+            <!--PARA QUER AS INFORMAÇÕES ENTRE NA TAGA OUTPUT ÉPRECISO USAR O PARAMETRO 'inoutput', OU SEJA 'QUANDO EU ENTRAR COM DADOS'-->
+            <label for="in1">Número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"><!--USANDO JAVASCRIPT ISSO QUER DIZER QUE: O HTML(innerHTM) QUE ESTA DENTRO DE SOMA(isoma) DEVE SAIR COMO RESULTADO A SOMA DE in1+in2(=Number(in1.value)+Number(in2.value))-->
+        </p>
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <!--A TAG 'output' É UMA TAG DE SAIDA DE DADOS, E SERVE PARA MOSTRAR NA TELA VALORES DAS TAG DE INPUT OU OUSTRAS TAGS DE ENTRADAS-->
+            <!--É PRECISO DAR UMA ID A TAG OUTPUT PARA PODER USAR A PROGRAMAÇÃO DE JAVASCRIPT-->
+            <!--IMPORTANTE!!!! O OUTPUT NÃO SERVE PARA ENVIAR NADA, APENAS PARA MOSTRAR SAIDA DE INPUTS NA TELA!!!!-->
+            <label for="isoma">Soma</label>
+            <output id="isoma">0</output>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+    
+</body>
+</html>
