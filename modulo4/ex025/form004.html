@@ -18,7 +18,7 @@
             </p>
             <p>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^$" required>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[0-9]{4,5}-[0-9]{4,5}$" required>
             </p>
             <!--É POSSIVEL CONFIGURAR O CAMPO TELEFONE PARA OBEDECER AOS PADORES DE NUMEROS COMO O DO BRASIL, E PARA ISSO É POSSIVEL USAR UMA 'EXPRESSÃO REGULAR' COM O PARAMETRO 'pattern'(PADRÃO)-->
             <!--TODA EXPRESSÃO REGULAR COMEÇA COM UM '^' E TERMINA COM UM '$'-->
@@ -30,7 +30,6 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
-        
     </form>
 </body>
 </html>
