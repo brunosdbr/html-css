@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!--AGORA VAMOS VER AS TAG INPUT TEL E E-MAIL-->
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on" required>
+        <fieldset><!--ESSA TAG QUER DIZER 'GRUPO DE CAMPOS, SERVE PARA AGRUPAR CADA DADOS DOS FORMUULÁRIOS EM UM CAMPO, CRIANDO UMA CAIXA'-->
+            <legend>Dados pessoais</legend><!--ESSA TAG É PARA COLOCAR UMA LEGENDA NO fieldset-->
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^$" required>
+            </p>
+            <!--É POSSIVEL CONFIGURAR O CAMPO TELEFONE PARA OBEDECER AOS PADORES DE NUMEROS COMO O DO BRASIL, E PARA ISSO É POSSIVEL USAR UMA 'EXPRESSÃO REGULAR' COM O PARAMETRO 'pattern'(PADRÃO)-->
+            <!--TODA EXPRESSÃO REGULAR COMEÇA COM UM '^' E TERMINA COM UM '$'-->
+            <!--PARA TELEFONE PODE SER ESCRITA ASSIM: ^[0-9]{4,5}-[0-9]{4,5}$ , QUE QUER DIZER QUE O CAMPO TEM QUE TER 4 OU 5 DIGITOS DE UM LADO SENDO DE 0 A 9 E DO OUTRO LADO 4 OU 5 DIGITOS SENDO DE 0 A 9 TAMBEM E O TRAÇO DIVIDINDO OS DOIS CAMPOS. E TAMBEM PODE SER ESCRITO ASSIM: ^\d{4,5}-\d{4,5}$ E ESSE FORMATO FAZ A MESMA COISA DO OUTRO, SENDO QUE O '\d' QUER DIZER 'digitos' E SABEMOS QUE OS DIGITOS SÃO DE 0 A 9-->
+            <!--AINDA É POSSIVEL ESCREVER ASSIM: ^\(\d{2}\)\d{4,5}-\d{4,5}$ , SERVE PARA COLCOAR O DDD COMO OBRIGATORIEDADE ENTRE PARENTESSES-->
+            <!--ESTUDAR EXPRESSÕES REGULARES(RegEx)-->
+            <p>
+        </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+</body>
+</html>
