@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+<!--AS 'Midias Query' SÃO SITES CRIADOS PARA DETERMINADA FUNÇÃO, COMO; IMPRESSÃO, VER NO CELULAR, VER NO TABLET, NTRE OUTROS-->
+<!--NESSE EXEMPLO VAMOS VER UM SITE PARA IMPRESSÃO-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilo/tela.css" media="screen"> <!--ESSE LINK PARA ARQUIVO CSS COM O ATRIBUTO 'media' E O NOME 'screen', SERVE PARA CRIAR UM ESTILO DIRECIONADO SO PARA A TELA DOS DISPOSITIVOS-->
+    <link rel="stylesheet" href="estilo/impressora.css" media="print"><!--JA ESSE ESTILO COM O ATRIBUTO 'media' E COM NOME 'print' SERVE PARA IMPRESSÃO-->
+    <!--RESUMINDO, É POSSÍVEL CRIAR UM ESTILA PARA VER NAS DIFERENTES TELAS E UM ESTILO SO PARA IMPRESSÃO DENTRO DO MESMO HTML, ISSO SE CHAMA;  ----MEDIA QUERY---- -->
+    
 </head>
 <body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+            <ul>
+                <li>Esportes</li>
+                <li>Tecnologia</li>
+                <li>Politica</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Estou aprendendo a criar mideais quiries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque quod, accusamus incidunt enim ducimus qui, odio fuga perspiciatis molestias reprehenderit tempore omnis labore unde optio velit atque, ea libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, expedita maxime repudiandae asperiores veniam blanditiis accusantium veritatis, vel reprehenderit tempora, numquam unde voluptatibus consequuntur quam tenetur inventore suscipit cumque ipsa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus possimus, dolorem voluptatem harum quasi dicta, est officia cupiditate ratione nobis explicabo? Ad non sunt saepe cum atque optio rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit repellat quod! Fugiat vero blanditiis assumenda, itaque id voluptates aliquam quisquam iste adipisci, illo, dolorem non molestias nostrum commodi fugit?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum deserunt consectetur eos perferendis nostrum qui optio suscipit aspernatur ea, deleniti pariatur nam, at, saepe voluptas nobis voluptatum sunt provident id?</p>
+        </article>
+    </main>
     
 </body>
 </html>
