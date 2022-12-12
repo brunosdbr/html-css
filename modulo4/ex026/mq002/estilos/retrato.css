@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*CONFIGURAÇÕES LANDSCAPE(PARA APARELHOS EM PÉ)*/
+
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
