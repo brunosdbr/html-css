@@ -1,3 +1,78 @@
 @charset "UTF-8";
 
-/*TODAS AS MIDIAS*/
+/*TODAS AS DEMAIS MIDIAS*/
+
+/*VAMOS VER AQUI OS CONCEITO DE: 'Typical Devices Breakpoints', QUE SÃO AS MEDIDAS RECOMENDADAS PARA AS DIVERSAS TELAS, ESSAS MEDIDAS SÃO RECOMENDADAS PELO 'W3C'*/
+/*EM 2020 AS MEDIDAS ESTAVAM::
+Pequenas Telas: Até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Telas Grandes: acima de 1200px
+
+OBS: ATENÇÃO!!!!!!!!!!!!!!! PESQUISAR AS TELAS DO DIA ATUAL PQ ESSAS MEDIADAS SÃO DE 2020
+
+*/
+
+@media print {/*IMPRESSÃO*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+   body{
+    background-image: url(../imagens/back-print.jpg);/*DESNECESSÁRIO POIS AO IMPRIMIR O BACKGROUND NÃO APRECE*/
+   }
+
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: block;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+}
+/*pequenas telas...
+@media screen and (max-width: 600px){
+    
+}
+celular...
+@media screen and (max-width: 600px) and (max-width: 768px){
+    
+}
+porem essas medidas não vão ser usadsa pois ja fora mfeitas no mobile first*/
+
+@media screen and (min-width: 600px) and (max-width: 992px){/*TABLET*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+    }
+@media screen and (min-width: 992px) and (max-width: 1200px){/*DESKTOP*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: block;}
+    img#tv{ display: none;}
+    }
+@media screen and (min-width: 1200px){/*TELAS GRANDES*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: block;}
+    
+}
