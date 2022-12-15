@@ -31,7 +31,7 @@ OBS: ATENÇÃO!!!!!!!!!!!!!!! PESQUISAR AS TELAS DO DIA ATUAL PQ ESSAS MEDIADAS 
     }
     img#phone{ display: none;}
     img#tablet{ display: none;}
-    img#print{ display: block;}
+    img#print{ display: block                       ;}
     img#pc{ display: none;}
     img#tv{ display: none;}
 }
